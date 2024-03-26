@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(240, 239, 239);
+}
+
+/*parte incio logo y enlaces */
+header{/*contenerdor general*/
+    background-color: #201f1f; 
+    padding: 15px 0;
+    /*position: fixed;posicion fija*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;/*poner encima de todo*/
+    }
+    
+    header .container{
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+    }
+    /*logo*/
+    header .container .logo{
+    width: 100px;
+    }
+    /*enlaces*/
+
+    header .container nav a{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-decoration: none;/*underline para poner linea*/
+        margin: 0 15px 0 15px;
+        font-size: 1.5em;
+
+    }
+ header .container nav a:hover {
+    color: rgb(13, 216, 30); 
+  }
+
+
+   
+    
+  
+    
+    .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    
+    }
+    /*FIN DEL LA CABECERA*/
+
+
+
+/*INICIO CURERPO*/
+.container{
+    width: 100%;
+    
+}
+    .info{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        height: 100%;
+    }
+    .info img{
+        width: 150px;
+        height: 150px;
+       
+    }
+ .container .R_s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.152);
+    font-size: 1.5em;
+}
+.container .R_s p{
+
+    font-size: large;
+}
+
+@media (max-width:767px) {
+    header .container nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+/*all a cualquiier propiedad*/
+        transition:all 0.4s ease;/*es el cambio de un estado a otro tipoo hover 
+        siempre esta en estado A y pasa a estado B con java*/
+        transform: translateX(100%);/*trasladar */
+
+    }
+    header .container nav.open{
+        transform: translateX(0);
+    }
+    .container{
+        width: 100%;
+    }
+    header .container nav a{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    header .container .hamb{
+        display: block;
+        font-size: 40px;
+        color: green;
+       
+    }
+    .info{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+   /*.info img{
+        margin-top: -300px;
+    }
+    .info p{
+        margin-top: 100px;
+        z-index: -1;
+        padding: 5px;
+     }
+
+    .info .uno{
+        margin-top: 0px;
+     } 
+     .info .unoo{
+        margin-top: -100px;
+     }
+
+     .info .dos{
+        margin-top: -400px;
+     } 
+     .info .doss{
+        margin-top: 40px;
+     } 
+     .info .tres{
+        margin-top: 220px;
+     } 
+     .info .tress{
+        margin-top: -110px;
+     } */
+      .xa{
+        display: flex;
+        flex-flow: column-reverse  ;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 15px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block; 
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:green;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+p{
+    font-size: 0.7rem;
+}

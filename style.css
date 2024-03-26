@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: "Roboto";
+    font-size: 13px;
+    background-color: rgba(72, 172, 138, 0.486);
+   
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+header{
+    padding: 15px 0;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+header .container .logo{
+   width: 100px;
+}
+header .container nav a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 80px;
+    transition: color 0.3s;
+ }
+ 
+ header .container nav a:hover {
+  color: rgb(13, 216, 30); 
+}
+ header .container .hamb{
+    display: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+section .container1{
+  margin:20px;
+}
+#inicio{
+
+    position: relative;
+}
+#inicio img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+#inicio .bloque-inicio{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   width: 400px;
+   text-align: center;
+   margin-left: -200px;
+   text-shadow: 
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+   -1px  1px 0 black,
+    1px  1px 0 black; 
+}
+#inicio .bloque-inicio h1{
+    color: white;
+    font-size: 35px;
+ }
+ #inicio .bloque-inicio p{
+    color: white;
+    font-size: 16px;
+ }
+#nosotros{
+    background-image: url(img/latas.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+#nosotros p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+.contenedor {
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .subtitulos {
+    flex-grow: 1; 
+  }
+  .titulo h1 {
+    margin: 70px;
+    background-color: rgba(24, 81, 238, 0.425);
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.342);
+  }
+  .subtitulos h2 {
+    background-color: rgba(0, 255, 255, 0.152);
+    margin-left: 30px;
+    margin-bottom: 40px; 
+    margin-right: 80px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .imagen {
+    flex-shrink: 0; 
+  }
+  
+  .imagen img {
+    border-radius: 50%; 
+    width: 300px; 
+    height: 300px;
+    margin-right: 50px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  footer{
+    background-color: black;
+    height: 150px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    height: 100%;
+    background-color: #010911;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:green;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .contenedor{
+        display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin-left: 30px;
+justify-items: center;
+text-align: center;
+    }
+    
+}
+p{
+    font-size: 0.7rem;
+}
+
+
+
+
+/* Añadimos estilos para el menú hamburguesa en responsivo */
+@media screen and (max-width: 800px) {
+
+
+body.menu-open header .container nav a {
+  color: rgb(0, 255, 13); /* Cambia el color del texto del menú cuando está abierto */
+}
+
+.hamb {
+  width: 20%; /* O cualquier otro estilo que desees aplicar */
+}
+
+header .container nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 14, 11, 0.836);
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+header .container nav.open {
+    transform: translateX(0);
+}
+
+header .container nav a {
+    font-size: 30px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255); /* Asegura que el texto sea visible */
+}
+
+header .container .hamb {
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    font-size: 40px;
+    color: rgb(30, 168, 53);
+    position: relative;
+    z-index: 1100; /* Asegura que el ícono del menú esté por encima de otros elementos */
+}
+form .boton .boton-negro{
+    width: 100%;
+}
+footer{
+    text-align: center;
+}
+footer .logo-footer{
+    width:50%;
+}
+footer .redes{
+   justify-content: center;
+}
+
+.container{
+    width: 100%;
+}
+.columna-mobile-100{
+    width: 100%;
+}
+.columna-mobile-50{
+    width: 50%;
+}
+.empujar-mobile-0{
+    margin-left: 0;
+}
+.sinpadding-mobile{
+    padding: 0;
+}
+#inicio{
+    height: 100vh;
+}
+#inicio img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#servicios .bloque-servicio{
+    margin-bottom: 15px;
+}
+#contactenos{
+    padding: 0;
+}
+#contactenos iframe{
+    position: relative;
+    height: 50vh;
+}
+
+}
